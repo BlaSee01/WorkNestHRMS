@@ -1,0 +1,191 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Moje\\Studia\\4\\in\u017C\\app\\WorkNestHRMS\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6D93808E-2182-4FC9-9835-5F3375469492}|WorkNestHRMS\\WorkNestHRMS.csproj|d:\\moje\\studia\\4\\in\u017C\\app\\worknesthrms\\worknesthrms\\controllers\\workplacecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D93808E-2182-4FC9-9835-5F3375469492}|WorkNestHRMS\\WorkNestHRMS.csproj|solutionrelative:worknesthrms\\controllers\\workplacecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D93808E-2182-4FC9-9835-5F3375469492}|WorkNestHRMS\\WorkNestHRMS.csproj|d:\\moje\\studia\\4\\in\u017C\\app\\worknesthrms\\worknesthrms\\models\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D93808E-2182-4FC9-9835-5F3375469492}|WorkNestHRMS\\WorkNestHRMS.csproj|solutionrelative:worknesthrms\\models\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D93808E-2182-4FC9-9835-5F3375469492}|WorkNestHRMS\\WorkNestHRMS.csproj|d:\\moje\\studia\\4\\in\u017C\\app\\worknesthrms\\worknesthrms\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D93808E-2182-4FC9-9835-5F3375469492}|WorkNestHRMS\\WorkNestHRMS.csproj|solutionrelative:worknesthrms\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D93808E-2182-4FC9-9835-5F3375469492}|WorkNestHRMS\\WorkNestHRMS.csproj|d:\\moje\\studia\\4\\in\u017C\\app\\worknesthrms\\worknesthrms\\models\\workplace.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D93808E-2182-4FC9-9835-5F3375469492}|WorkNestHRMS\\WorkNestHRMS.csproj|solutionrelative:worknesthrms\\models\\workplace.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D93808E-2182-4FC9-9835-5F3375469492}|WorkNestHRMS\\WorkNestHRMS.csproj|d:\\moje\\studia\\4\\in\u017C\\app\\worknesthrms\\worknesthrms\\models\\userworkplace.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D93808E-2182-4FC9-9835-5F3375469492}|WorkNestHRMS\\WorkNestHRMS.csproj|solutionrelative:worknesthrms\\models\\userworkplace.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D93808E-2182-4FC9-9835-5F3375469492}|WorkNestHRMS\\WorkNestHRMS.csproj|d:\\moje\\studia\\4\\in\u017C\\app\\worknesthrms\\worknesthrms\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D93808E-2182-4FC9-9835-5F3375469492}|WorkNestHRMS\\WorkNestHRMS.csproj|solutionrelative:worknesthrms\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D93808E-2182-4FC9-9835-5F3375469492}|WorkNestHRMS\\WorkNestHRMS.csproj|d:\\moje\\studia\\4\\in\u017C\\app\\worknesthrms\\worknesthrms\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D93808E-2182-4FC9-9835-5F3375469492}|WorkNestHRMS\\WorkNestHRMS.csproj|solutionrelative:worknesthrms\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D93808E-2182-4FC9-9835-5F3375469492}|WorkNestHRMS\\WorkNestHRMS.csproj|d:\\moje\\studia\\4\\in\u017C\\app\\worknesthrms\\worknesthrms\\models\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D93808E-2182-4FC9-9835-5F3375469492}|WorkNestHRMS\\WorkNestHRMS.csproj|solutionrelative:worknesthrms\\models\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D93808E-2182-4FC9-9835-5F3375469492}|WorkNestHRMS\\WorkNestHRMS.csproj|d:\\moje\\studia\\4\\in\u017C\\app\\worknesthrms\\worknesthrms\\models\\workplacedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D93808E-2182-4FC9-9835-5F3375469492}|WorkNestHRMS\\WorkNestHRMS.csproj|solutionrelative:worknesthrms\\models\\workplacedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D93808E-2182-4FC9-9835-5F3375469492}|WorkNestHRMS\\WorkNestHRMS.csproj|d:\\moje\\studia\\4\\in\u017C\\app\\worknesthrms\\worknesthrms\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D93808E-2182-4FC9-9835-5F3375469492}|WorkNestHRMS\\WorkNestHRMS.csproj|solutionrelative:worknesthrms\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 9,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "D:\\Moje\\Studia\\4\\in\u017C\\app\\WorkNestHRMS\\WorkNestHRMS\\Models\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "WorkNestHRMS\\Models\\ApplicationDbContext.cs",
+              "ToolTip": "D:\\Moje\\Studia\\4\\in\u017C\\app\\WorkNestHRMS\\WorkNestHRMS\\Models\\ApplicationDbContext.cs",
+              "RelativeToolTip": "WorkNestHRMS\\Models\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T18:15:04.214Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserDto.cs",
+              "DocumentMoniker": "D:\\Moje\\Studia\\4\\in\u017C\\app\\WorkNestHRMS\\WorkNestHRMS\\Models\\UserDto.cs",
+              "RelativeDocumentMoniker": "WorkNestHRMS\\Models\\UserDto.cs",
+              "ToolTip": "D:\\Moje\\Studia\\4\\in\u017C\\app\\WorkNestHRMS\\WorkNestHRMS\\Models\\UserDto.cs",
+              "RelativeToolTip": "WorkNestHRMS\\Models\\UserDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-17T16:54:21.541Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "WorkplaceDto.cs",
+              "DocumentMoniker": "D:\\Moje\\Studia\\4\\in\u017C\\app\\WorkNestHRMS\\WorkNestHRMS\\Models\\WorkplaceDto.cs",
+              "RelativeDocumentMoniker": "WorkNestHRMS\\Models\\WorkplaceDto.cs",
+              "ToolTip": "D:\\Moje\\Studia\\4\\in\u017C\\app\\WorkNestHRMS\\WorkNestHRMS\\Models\\WorkplaceDto.cs",
+              "RelativeToolTip": "WorkNestHRMS\\Models\\WorkplaceDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-17T15:50:46.567Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\Moje\\Studia\\4\\in\u017C\\app\\WorkNestHRMS\\WorkNestHRMS\\Models\\User.cs",
+              "RelativeDocumentMoniker": "WorkNestHRMS\\Models\\User.cs",
+              "ToolTip": "D:\\Moje\\Studia\\4\\in\u017C\\app\\WorkNestHRMS\\WorkNestHRMS\\Models\\User.cs",
+              "RelativeToolTip": "WorkNestHRMS\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-11T17:41:56.66Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Workplace.cs",
+              "DocumentMoniker": "D:\\Moje\\Studia\\4\\in\u017C\\app\\WorkNestHRMS\\WorkNestHRMS\\Models\\Workplace.cs",
+              "RelativeDocumentMoniker": "WorkNestHRMS\\Models\\Workplace.cs",
+              "ToolTip": "D:\\Moje\\Studia\\4\\in\u017C\\app\\WorkNestHRMS\\WorkNestHRMS\\Models\\Workplace.cs",
+              "RelativeToolTip": "WorkNestHRMS\\Models\\Workplace.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-17T15:47:46.586Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UserWorkplace.cs",
+              "DocumentMoniker": "D:\\Moje\\Studia\\4\\in\u017C\\app\\WorkNestHRMS\\WorkNestHRMS\\Models\\UserWorkplace.cs",
+              "RelativeDocumentMoniker": "WorkNestHRMS\\Models\\UserWorkplace.cs",
+              "ToolTip": "D:\\Moje\\Studia\\4\\in\u017C\\app\\WorkNestHRMS\\WorkNestHRMS\\Models\\UserWorkplace.cs",
+              "RelativeToolTip": "WorkNestHRMS\\Models\\UserWorkplace.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-17T15:48:05.274Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Moje\\Studia\\4\\in\u017C\\app\\WorkNestHRMS\\WorkNestHRMS\\Program.cs",
+              "RelativeDocumentMoniker": "WorkNestHRMS\\Program.cs",
+              "ToolTip": "D:\\Moje\\Studia\\4\\in\u017C\\app\\WorkNestHRMS\\WorkNestHRMS\\Program.cs",
+              "RelativeToolTip": "WorkNestHRMS\\Program.cs",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAwwHUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T17:07:32.69Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\Moje\\Studia\\4\\in\u017C\\app\\WorkNestHRMS\\WorkNestHRMS\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "WorkNestHRMS\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\Moje\\Studia\\4\\in\u017C\\app\\WorkNestHRMS\\WorkNestHRMS\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "WorkNestHRMS\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAQwCwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T15:34:08.491Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "D:\\Moje\\Studia\\4\\in\u017C\\app\\WorkNestHRMS\\WorkNestHRMS\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "WorkNestHRMS\\Controllers\\AuthController.cs",
+              "ToolTip": "D:\\Moje\\Studia\\4\\in\u017C\\app\\WorkNestHRMS\\WorkNestHRMS\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "WorkNestHRMS\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAHsAAAAAAAAAAAAwwKEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-05T17:02:24.817Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "WorkplaceController.cs",
+              "DocumentMoniker": "D:\\Moje\\Studia\\4\\in\u017C\\app\\WorkNestHRMS\\WorkNestHRMS\\Controllers\\WorkplaceController.cs",
+              "RelativeDocumentMoniker": "WorkNestHRMS\\Controllers\\WorkplaceController.cs",
+              "ToolTip": "D:\\Moje\\Studia\\4\\in\u017C\\app\\WorkNestHRMS\\WorkNestHRMS\\Controllers\\WorkplaceController.cs",
+              "RelativeToolTip": "WorkNestHRMS\\Controllers\\WorkplaceController.cs",
+              "ViewState": "AgIAAJ4AAAAAAAAAAAAgwKIAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-17T15:50:27.129Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
