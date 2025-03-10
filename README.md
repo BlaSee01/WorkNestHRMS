@@ -24,7 +24,8 @@ git clone https://github.com/BlaSee01/WorkNestHRMS.git
 ### 2. Przejdź do katalogu projektu
 ```bash
 cd WorkNestHRMS
-``` lub przez GUI
+```
+lub przez GUI
 
 ### 3. Otwórz projekt przy użyciu Visual Studio lub innego środowiska deweloperskiego i edytuj plik appsettings.json w celu ustawienia dostępu do własnej bazy danych.
 "ConnectionStrings": {
