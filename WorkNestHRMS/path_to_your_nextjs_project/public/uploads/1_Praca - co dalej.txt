@@ -1,0 +1,31 @@
+OGÓLNE:
+- akapity	
+- źródła do bibliografii		+	(zweryfikwoać ten artykuł [3] i znaleźć wskazaną literaturę)	
+- pojedyncze znaki an końcu linijki
+- odwołania do rysuinków i tabel
+
+1 ROZDZIAŁ:
+- więcej źródeł żeby uniknąć JSA
+porównanie workday z bamboo jest z dupy, bo workday nie wiem czym jest i na pewno nie jest potwierdzeneim na uzycie technologi biometrii i IoT ... (zmiana oprogramowania do porównania z workday na coś albo dać źródło do artykułu omawiającego workday)
+
+2 ROZDZIAŁ:
+- co z porównaniem 2 systemów?	DONE (wnioski: Po prostu w rozdziale 3: Implementacja będę czasami się odwoływał do konkretnych funkcji istniejących systemów)
+- zrobić diagramy	DONE 
+- poprawić use case diagram (REALCJE) i diagram klas (RAPORT)	DONE  (wnioski: ewentualnie UC porpawić relacje ale ciężko)
+- dokończyć projektowanie, lub koniec i przejść do rozdziału 3		DONE 
+czy wymagania które nie będą implementowane zaznaczyć * tak jak kolorkiem na diagramach? 	+	czy dodawać do nich więcej niż 1 wymaganie, skoro zapewniają wsyzstko zewn. systemy
+więcej wymagań NFR ?
+
+3 ROZDZIAŁ:
+-stos technologiczny		DONE 
+-wytłuamczyć technologie i współpracę	DONE   (wnioski: można jeszce współpracę pokazać jak starczy czasu)
+-implementacja + porównanie z bambooHR (?)
+-co sie nie udało zaimplementować i dlaczego
+-krótkie wnioski na podstawie implementacji
+
+4 RODZIAŁ:
+-wykonać testy backend frontend na przykładnie 1 funkcji programu (?)
+-krótkie wnioski na pdostawie testów
+
+PODSUMOWANIE
+-krótko i na temat :D
