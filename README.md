@@ -27,7 +27,7 @@ cd WorkNestHRMS
 ```
 lub przez GUI
 
-### 3. Otwórz projekt przy użyciu Visual Studio lub innego środowiska deweloperskiego i edytuj plik appsettings.json w celu ustawienia dostępu do własnej bazy danych.
+### 3. Otwórz projekt przy użyciu Visual Studio lub innego środowiska deweloperskiego i edytuj plik appsettings.json w celu ustawienia dostępu do własnej bazy danych
 ```bash
 "ConnectionStrings": {
  "DefaultConnection":
@@ -36,17 +36,17 @@ d=MyPassword123"
 }
 ```
 
-### 4. Zainstaluj w Powershell Microsoft Entity Framework podaną komendą.
+### 4. Zainstaluj w Powershell Microsoft Entity Framework podaną komendą
 ```bash
 dotnet tool install --global dotnet-ef
 ```
 
-### 5. Zaktualizuj wcześniej utworzoną przez siebię bazę danych podaną komendą.
+### 5. Zaktualizuj wcześniej utworzoną przez siebię bazę danych podaną komendą
 ```bash
 dotnet ef database update
 ```
 
-### 6. Uruchom porgram podaną komendą.
+### 6. Uruchom porgram podaną komendą
 ```bash
 dotnet run
 ```
