@@ -28,19 +28,27 @@ cd WorkNestHRMS
 lub przez GUI
 
 ### 3. Otwórz projekt przy użyciu Visual Studio lub innego środowiska deweloperskiego i edytuj plik appsettings.json w celu ustawienia dostępu do własnej bazy danych.
+```bash
 "ConnectionStrings": {
  "DefaultConnection":
 "Host=localhost;Port=5432;Database=nazwabazy;Username=postgres;Passwor
 d=MyPassword123"
 }
+```
 
 ### 4. Zainstaluj w Powershell Microsoft Entity Framework podaną komendą.
+```bash
 dotnet tool install --global dotnet-ef
+```
 
-### 5. Zaktualizuj wcześniej utworzoną przez siebię bazę danych podaną komendą. 
+### 5. Zaktualizuj wcześniej utworzoną przez siebię bazę danych podaną komendą.
+```bash
 dotnet ef database update
+```
 
 ### 6. Uruchom porgram podaną komendą.
+```bash
 dotnet run
+```
 
 <ins>Program warstwy backend uruchamiany jest na porcie ustalonym w pliku konfiguracyjnym. W celu zmiany portu, wprowadzić zmianę w kodzie źródłowym pliku launchSettings.json.</ins>
