@@ -7,7 +7,7 @@ namespace WorkNestHRMS.Controllers;
 [Route("api/admin")]
 public class AdminController : ControllerBase
 {
-    [Authorize(Policy = "AdminOnly")]   // kontroler nieużyWay, tylko do postmana go potrzeba mi
+    [Authorize(Policy = "AdminOnly")]   // kontroler nieużywany, tylko do postmana go potrzeba mi
     [HttpGet("data")]
     public IActionResult GetAdminData()
     {

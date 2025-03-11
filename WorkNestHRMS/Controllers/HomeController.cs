@@ -17,7 +17,7 @@ public class HomeController : ControllerBase
         _dbContext = dbContext;
     }
 
-    [Authorize]
+    [Authorize]         // print tasks
     [HttpGet("tasks")]
     public async Task<IActionResult> GetUserTasks()
     {

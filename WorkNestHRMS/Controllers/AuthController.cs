@@ -76,7 +76,7 @@ public class AuthController : ControllerBase
         {
             Username = registerDto.Username,
             PasswordHash = hashedPassword,
-            Role = registerDto.Role.ToLower()   // rozwiąże problem z "no resources" - TEMP
+            Role = registerDto.Role.ToLower()   // raczej rozwiąże problem z "no resources" - TEMP
         };
 
         _dbContext.Users.Add(newUser);

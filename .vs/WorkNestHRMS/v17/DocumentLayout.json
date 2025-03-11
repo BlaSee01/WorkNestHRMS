@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Moje\\Studia\\4\\in\u017C\\app\\WorkNestHRMS\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6D93808E-2182-4FC9-9835-5F3375469492}|WorkNestHRMS\\WorkNestHRMS.csproj|d:\\moje\\studia\\4\\in\u017C\\app\\worknesthrms\\worknesthrms\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{6D93808E-2182-4FC9-9835-5F3375469492}|WorkNestHRMS\\WorkNestHRMS.csproj|solutionrelative:worknesthrms\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D93808E-2182-4FC9-9835-5F3375469492}|WorkNestHRMS\\WorkNestHRMS.csproj|d:\\moje\\studia\\4\\in\u017C\\app\\worknesthrms\\worknesthrms\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{6D93808E-2182-4FC9-9835-5F3375469492}|WorkNestHRMS\\WorkNestHRMS.csproj|solutionrelative:worknesthrms\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Moje\\Studia\\4\\in\u017C\\app\\WorkNestHRMS\\WorkNestHRMS\\appsettings.json",
+              "RelativeDocumentMoniker": "WorkNestHRMS\\appsettings.json",
+              "ToolTip": "D:\\Moje\\Studia\\4\\in\u017C\\app\\WorkNestHRMS\\WorkNestHRMS\\appsettings.json",
+              "RelativeToolTip": "WorkNestHRMS\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-11T18:41:26.645Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\Moje\\Studia\\4\\in\u017C\\app\\WorkNestHRMS\\WorkNestHRMS\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "WorkNestHRMS\\Properties\\launchSettings.json",
+              "ToolTip": "D:\\Moje\\Studia\\4\\in\u017C\\app\\WorkNestHRMS\\WorkNestHRMS\\Properties\\launchSettings.json",
+              "RelativeToolTip": "WorkNestHRMS\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-11T18:41:21.891Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

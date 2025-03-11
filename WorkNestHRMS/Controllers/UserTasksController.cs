@@ -33,7 +33,7 @@ namespace WorkNestHRMS.Controllers
                 }
 
                 var workplaceIds = await _dbContext.UserWorkplaces
-                    .Where(uw => uw.UserId.ToString() == userId) // jak nie zadziała to do int z powrotem i dalej parsować tam gdzie "+" TEMPP
+                    .Where(uw => uw.UserId.ToString() == userId) 
                     .Select(uw => uw.WorkplaceId)
                     .ToListAsync();
 

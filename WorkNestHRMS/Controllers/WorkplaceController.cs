@@ -28,7 +28,7 @@ public class WorkplaceController : ControllerBase
         };
     }
 
-    private WorkplaceDto MapToWorkplaceDto(Workplace workplace) // jeszce zostaw v2
+    private WorkplaceDto MapToWorkplaceDto(Workplace workplace) 
     {
         return new WorkplaceDto
         {
