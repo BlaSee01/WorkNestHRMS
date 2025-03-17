@@ -53,7 +53,7 @@ dotnet run
 
 <ins>Program warstwy backend uruchamiany jest na porcie ustalonym w pliku konfiguracyjnym. W celu zmiany portu, wprowadzić zmianę w kodzie źródłowym pliku launchSettings.json.</ins>
 
-### 6. Przejdź do konfiguracji warswy frontend.
+### 6. Przejdź do konfiguracji warswy frontend
 ```bash
 https://github.com/BlaSee01/work_next_front
 ```
