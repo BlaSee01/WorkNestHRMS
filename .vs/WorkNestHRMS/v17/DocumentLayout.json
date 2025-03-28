@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\Moje\\Studia\\4\\in\u017C\\app\\WorkNestHRMS\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{6D93808E-2182-4FC9-9835-5F3375469492}|WorkNestHRMS\\WorkNestHRMS.csproj|d:\\moje\\studia\\4\\in\u017C\\app\\worknesthrms\\worknesthrms\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D93808E-2182-4FC9-9835-5F3375469492}|WorkNestHRMS\\WorkNestHRMS.csproj|solutionrelative:worknesthrms\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6D93808E-2182-4FC9-9835-5F3375469492}|WorkNestHRMS\\WorkNestHRMS.csproj|d:\\moje\\studia\\4\\in\u017C\\app\\worknesthrms\\worknesthrms\\models\\jwtsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6D93808E-2182-4FC9-9835-5F3375469492}|WorkNestHRMS\\WorkNestHRMS.csproj|solutionrelative:worknesthrms\\models\\jwtsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -19,6 +23,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "D:\\Moje\\Studia\\4\\in\u017C\\app\\WorkNestHRMS\\WorkNestHRMS\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "WorkNestHRMS\\Controllers\\AuthController.cs",
+              "ToolTip": "D:\\Moje\\Studia\\4\\in\u017C\\app\\WorkNestHRMS\\WorkNestHRMS\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "WorkNestHRMS\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-28T09:45:27.89Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "JwtSettings.cs",
               "DocumentMoniker": "D:\\Moje\\Studia\\4\\in\u017C\\app\\WorkNestHRMS\\WorkNestHRMS\\Models\\JwtSettings.cs",
               "RelativeDocumentMoniker": "WorkNestHRMS\\Models\\JwtSettings.cs",

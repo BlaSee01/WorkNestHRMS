@@ -21,7 +21,6 @@ public class AuthController : ControllerBase
     {
         _dbContext = dbContext;
     }
-
     private string GenerateJwtToken(User user)
     {
         var jwtSettings = new JwtSettings();
