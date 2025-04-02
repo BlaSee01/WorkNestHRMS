@@ -45,7 +45,7 @@ public class TasksController : ControllerBase
             AssignedWorkGroupId = request.AssignedWorkGroupId,
             CreatedByUserId = int.Parse(userId),
             WorkplaceId = workplaceId,
-            Attachments = new List<string>() // jak nie działa to wrócić do const stringa (edit1 : działa!!!!!!!!!!!!!)
+            Attachments = new List<string>() // jak nie działa to wrócić do const stringa (edit1 : działa!!!!!!!!!!!)
         };
 
         _dbContext.Tasks.Add(task);
