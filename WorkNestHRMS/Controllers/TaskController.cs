@@ -284,7 +284,6 @@ public class TasksController : ControllerBase
         var ext = Path.GetExtension(path).ToLowerInvariant();
         return types.GetValueOrDefault(ext, "application/octet-stream");
     }
-
     private Dictionary<string, string> GetMimeTypes()
     {
         return new Dictionary<string, string>
