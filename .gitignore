@@ -1,0 +1,14 @@
+# Maven
+/target
+
+# Logs
+*.log
+
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# Config
+.env
+application.properties
