@@ -27,13 +27,16 @@ cd WorkNestHRMS
 ```
 lub przez GUI
 
-### 3. Otwórz projekt przy użyciu Visual Studio lub innego środowiska deweloperskiego i edytuj plik appsettings.json w celu ustawienia dostępu do własnej bazy danych
+### 3. Otwórz projekt przy użyciu Visual Studio lub innego środowiska deweloperskiego i utwórz plik .env w celu ustawienia dostępu do własnej bazy danych (dla przykładu)
 ```bash
-"ConnectionStrings": {
- "DefaultConnection":
-"Host=localhost;Port=5432;Database=nazwabazy;Username=postgres;Passwor
-d=MyPassword123"
-}
+DB_HOST=localhost
+DB_NAME=nazwa_db
+DB_USER=user_db
+DB_PASSWORD=password_db
+JWT_SECRET=jwt_unique_key
+JWT_ISSUER=IssuerName
+JWT_AUDIENCE=AudienceName
+
 ```
 
 ### 4. Zainstaluj w Powershell Microsoft Entity Framework podaną komendą
