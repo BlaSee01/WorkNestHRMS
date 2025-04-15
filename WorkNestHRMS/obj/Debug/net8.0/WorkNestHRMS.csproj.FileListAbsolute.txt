@@ -146,3 +146,5 @@ D:\Moje\Studia\4\inż\app\WorkNestHRMS\WorkNestHRMS\bin\Debug\net8.0\System.Iden
 D:\Moje\Studia\4\inż\app\WorkNestHRMS\WorkNestHRMS\bin\Debug\net8.0\BCrypt.Net-Next.dll
 D:\Moje\Studia\4\inż\app\WorkNestHRMS\WorkNestHRMS\obj\Debug\net8.0\WorkNestHRMS.sourcelink.json
 D:\Moje\Studia\4\inż\app\WorkNestHRMS\WorkNestHRMS\bin\Debug\net8.0\Newtonsoft.Json.dll
+D:\Moje\Studia\4\inż\app\WorkNestHRMS\WorkNestHRMS\bin\Debug\net8.0\DotNetEnv.dll
+D:\Moje\Studia\4\inż\app\WorkNestHRMS\WorkNestHRMS\bin\Debug\net8.0\Sprache.dll

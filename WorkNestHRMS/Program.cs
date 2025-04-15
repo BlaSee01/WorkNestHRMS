@@ -3,14 +3,14 @@ using WorkNestHRMS.Models;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
-using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
-using Microsoft.Extensions.FileProviders;
-
+using DotNetEnv;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// CORS
+// £adujemy .env dopiero TERAZ
+Env.Load();
+
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAll", policy =>
@@ -21,21 +21,18 @@ builder.Services.AddCors(options =>
     });
 });
 
-
-
-// Entity Framework
+// Connection string z .env
+var connectionString = $"Host={Env.GetString("DB_HOST")};Database={Env.GetString("DB_NAME")};Username={Env.GetString("DB_USER")};Password={Env.GetString("DB_PASSWORD")}";
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
-    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
+    options.UseNpgsql(connectionString));
 
-// JWT
-var jwtSettings = new JwtSettings();
-builder.Configuration.GetSection("JwtSettings").Bind(jwtSettings);
-
-/*IssuerSigningKeyResolver = (token, securityToken, kid, parameters) =>
+// JWT z .env
+var jwtSettings = new JwtSettings
 {
-    // nie uda³o siê, ale jeszce zostawiam - TEMP
-    return new[] { new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtSettings.SecretKey)) };
-},*/
+    Issuer = Env.GetString("JWT_ISSUER"),
+    Audience = Env.GetString("JWT_AUDIENCE"),
+    SecretKey = Env.GetString("JWT_SECRET")
+};
 
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>
@@ -49,7 +46,7 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             ValidIssuer = jwtSettings.Issuer,
             ValidAudience = jwtSettings.Audience,
             IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtSettings.SecretKey)),
-            NameClaimType = ClaimTypes.Name, // Poprawne mapowanie dla User.Identity.Name
+            NameClaimType = ClaimTypes.Name,
             RoleClaimType = ClaimTypes.Role
         };
     });
@@ -60,7 +57,12 @@ builder.Services.AddAuthorization(options =>
     options.AddPolicy("UserOnly", policy => policy.RequireRole("user"));
 });
 
-builder.Services.Configure<JwtSettings>(builder.Configuration.GetSection("JwtSettings"));
+builder.Services.Configure<JwtSettings>(opts =>
+{
+    opts.Issuer = jwtSettings.Issuer;
+    opts.Audience = jwtSettings.Audience;
+    opts.SecretKey = jwtSettings.SecretKey;
+});
 
 builder.Services.AddControllers()
     .AddJsonOptions(options =>
@@ -68,10 +70,8 @@ builder.Services.AddControllers()
 
 var app = builder.Build();
 
-// CORS w³¹czony po zbudowaniu
 app.UseCors("AllowAll");
 
-// uwierzytelnienie i autoryzacja
 app.UseAuthentication();
 
 app.Use(async (context, next) =>
@@ -86,7 +86,6 @@ app.Use(async (context, next) =>
 
         Console.WriteLine($"Authenticated User: {username}, Role: {role}");
 
-        // claimy, bo Ÿle id pobiera - TEMP (solved)
         foreach (var claim in context.User.Claims)
         {
             Console.WriteLine($"Claim: {claim.Type} = {claim.Value}");

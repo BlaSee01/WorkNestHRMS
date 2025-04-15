@@ -8,6 +8,8 @@ using Microsoft.IdentityModel.Tokens;
 using System.Security.Claims;
 using BCrypt.Net;
 using Microsoft.AspNetCore.Authorization;
+using DotNetEnv; // <-- WAŻNE: dodane
+using System.Linq;
 
 namespace WorkNestHRMS.Controllers;
 
@@ -20,44 +22,48 @@ public class AuthController : ControllerBase
     public AuthController(ApplicationDbContext dbContext)
     {
         _dbContext = dbContext;
+        Env.Load(); // <-- WAŻNE: załaduj .env tutaj na wszelki wypadek (może być też w Program.cs)
     }
+
     private string GenerateJwtToken(User user)
     {
-        var jwtSettings = new JwtSettings();
-        new ConfigurationBuilder()
-            .AddJsonFile("appsettings.json")
-            .Build()
-            .GetSection("JwtSettings")
-            .Bind(jwtSettings);
+        var secretKey = Env.GetString("JWT_SECRET");
+        var issuer = Env.GetString("JWT_ISSUER");
+        var audience = Env.GetString("JWT_AUDIENCE");
 
-        var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtSettings.SecretKey));
+        if (string.IsNullOrWhiteSpace(secretKey))
+        {
+            throw new Exception("JWT_SECRET is missing in .env!");
+        }
+
+        var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secretKey));
         var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
 
         var claims = new[]
         {
-        //new Claim(JwtRegisteredClaimNames.Sub, user.Username),
-        new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()), // tu userId, chyba sie uda 12.12.24 - TEMP (stosować w następnych kontrolerach jak sie uda)
-        new Claim(ClaimTypes.Name, user.Username),
-        new Claim("role", user.Role),
-        new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
-    };
+            new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
+            new Claim(ClaimTypes.Name, user.Username),
+            new Claim(ClaimTypes.Role, user.Role),
+            new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
+        };
 
         var token = new JwtSecurityToken(
-            issuer: jwtSettings.Issuer,
-            audience: jwtSettings.Audience,
+            issuer: issuer,
+            audience: audience,
             claims: claims,
             expires: DateTime.UtcNow.AddHours(0.5),
             signingCredentials: creds
         );
-        Console.WriteLine($"Claims in generated token: {string.Join(", ", claims.Select(c => $"{c.Type}={c.Value}"))}");
-        return new JwtSecurityTokenHandler().WriteToken(token);
 
+        Console.WriteLine($"Claims in generated token: {string.Join(", ", claims.Select(c => $"{c.Type}={c.Value}"))}");
+
+        return new JwtSecurityTokenHandler().WriteToken(token);
     }
 
     [HttpPost("register")]
     public async Task<IActionResult> Register([FromBody] RegisterDto registerDto)
     {
-        Console.WriteLine($"Register request: Username={registerDto.Username}, Password={registerDto.Password}, Role={registerDto.Role}");  // czy mamy dane do rejestracji w kontekscie DbContnext
+        Console.WriteLine($"Register request: Username={registerDto.Username}, Password={registerDto.Password}, Role={registerDto.Role}");
 
         if (await _dbContext.Users.AnyAsync(u => u.Username == registerDto.Username))
             return BadRequest("Użytkownik o takiej nazwie już istnieje.");
@@ -75,18 +81,17 @@ public class AuthController : ControllerBase
         {
             Username = registerDto.Username,
             PasswordHash = hashedPassword,
-            Role = registerDto.Role.ToLower()   // raczej rozwiąże problem z "no resources" - TEMP
+            Role = registerDto.Role.ToLower()
         };
 
         _dbContext.Users.Add(newUser);
         await _dbContext.SaveChangesAsync();
         Console.WriteLine($"Nowy użytkownik zapisany z ID: {newUser.Id}");
 
-        // pustey employee
         var newEmployee = new Employee
         {
             UserId = newUser.Id,
-            Id = newUser.Id 
+            Id = newUser.Id
         };
 
         Console.WriteLine($"Tworzenie nowego pracownika z UserId: {newEmployee.UserId}");
@@ -94,7 +99,7 @@ public class AuthController : ControllerBase
         _dbContext.Employees.Add(newEmployee);
         try
         {
-            await _dbContext.SaveChangesAsync(); 
+            await _dbContext.SaveChangesAsync();
             Console.WriteLine("Zapisano obiekt Employee w bazie danych.");
         }
         catch (Exception ex)
@@ -102,6 +107,7 @@ public class AuthController : ControllerBase
             Console.WriteLine($"Błąd podczas zapisu obiektu Employee: {ex.Message}");
             return StatusCode(500, "Wystąpił błąd podczas zapisywania danych.");
         }
+
         return Ok("Użytkownik zarejestrowany pomyślnie.");
     }
 
@@ -131,12 +137,9 @@ public class AuthController : ControllerBase
     public IActionResult RefreshToken([FromBody] string expiredToken)
     {
         var jwtHandler = new JwtSecurityTokenHandler();
-        var jwtSettings = new JwtSettings();
-        new ConfigurationBuilder()
-            .AddJsonFile("appsettings.json")
-            .Build()
-            .GetSection("JwtSettings")
-            .Bind(jwtSettings);
+        var secretKey = Env.GetString("JWT_SECRET");
+        var issuer = Env.GetString("JWT_ISSUER");
+        var audience = Env.GetString("JWT_AUDIENCE");
 
         try
         {
@@ -144,11 +147,11 @@ public class AuthController : ControllerBase
             {
                 ValidateIssuer = true,
                 ValidateAudience = true,
-                ValidateLifetime = false, // TEMP (póki nie rozwiążemy problemu z wyrzucaniem edit1: rozciągnąć exp w tokenie i włączyć na true)
+                ValidateLifetime = false,
                 ValidateIssuerSigningKey = true,
-                ValidIssuer = jwtSettings.Issuer,
-                ValidAudience = jwtSettings.Audience,
-                IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtSettings.SecretKey)),
+                ValidIssuer = issuer,
+                ValidAudience = audience,
+                IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secretKey)),
             }, out var securityToken);
 
             if (securityToken is JwtSecurityToken jwtSecurityToken &&
@@ -163,6 +166,7 @@ public class AuthController : ControllerBase
                 var newToken = GenerateJwtToken(user);
                 return Ok(new { Token = newToken });
             }
+
             return Unauthorized("Invalid token.");
         }
         catch (Exception ex)
