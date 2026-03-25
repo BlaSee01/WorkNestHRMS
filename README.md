@@ -49,7 +49,7 @@ dotnet tool install --global dotnet-ef
 dotnet ef database update
 ```
 
-### 6. Uruchom porgram podaną komendą
+### 6. Uruchom program podaną komendą
 ```bash
 dotnet run
 ```
